@@ -1,0 +1,57 @@
+{
+  "name": "web-development-bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabor Molnar <gabormolnar92@gmail.com>",
+  "license": "MIT",
+  "description": "Bootstrap for web development",
+  "dependencies": {
+    "@angular/common": "~2.3.0",
+    "@angular/compiler": "~2.3.0",
+    "@angular/core": "~2.3.0",
+    "@angular/forms": "~2.3.0",
+    "@angular/http": "~2.3.0",
+    "@angular/platform-browser": "~2.3.0",
+    "@angular/platform-browser-dynamic": "~2.3.0",
+    "@angular/router": "~3.3.0",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-rc.4",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.35",
+    "@types/node": "^6.0.45",
+    "angular2-template-loader": "^0.4.0",
+    "awesome-typescript-loader": "^2.2.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-google-webfonts": "0.0.14",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-modify-css-urls": "^0.2.2",
+    "gulp-prettify": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7",
+    "html-loader": "^0.4.3",
+    "typescript": "^2.0.10",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^1.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabemiller/web-development-bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabemiller/web-development-bootstrap/issues"
+  },
+  "homepage": "https://github.com/gabemiller/web-development-bootstrap#readme"
+}
