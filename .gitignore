@@ -2,3 +2,6 @@
 .sass-cache
 bower_components
 node_modules
+__workaround.node.ts
+server.ts
+typings
