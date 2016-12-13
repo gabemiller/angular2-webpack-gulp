@@ -157,3 +157,5 @@ gulp.task('watch', function () {
  * Initialize all tasks and watchers.
  */
 gulp.task('init', ['scss', 'vendor', 'webpack', 'images','watch', 'webserver']);
+
+gulp.task('build',['html','scss','webpack']);
