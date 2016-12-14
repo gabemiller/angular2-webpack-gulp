@@ -29,6 +29,9 @@ var webpackConfig = {
             name: ['app','vendor', 'polyfills']
         }),
         new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            },
             mangle: {
                 keep_fnames: true
             }
