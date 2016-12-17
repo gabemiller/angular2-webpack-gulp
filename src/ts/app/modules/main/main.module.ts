@@ -5,9 +5,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MainComponent } from './main/main.component';
+import { UniversalModule } from 'angular2-universal';
 
 @NgModule({
-    imports: [ BrowserModule ],
+    imports: [ BrowserModule, UniversalModule ],
     declarations: [ MainComponent ],
     bootstrap: [ MainComponent ]
 })

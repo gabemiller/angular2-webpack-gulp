@@ -23,6 +23,10 @@ var gulpConfig = {
             boot : './src/ts/app/app.ts',
             dest: './dist/scripts'
         },
+        webpackServer:{
+            src : './src/ts/server/server.ts',
+            dest: './dist/'
+        },
         image : {
             src : './src/images/*.{gif,jpg,png,svg}',
             dest: './dist/images',

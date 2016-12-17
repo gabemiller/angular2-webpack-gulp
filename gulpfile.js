@@ -32,6 +32,7 @@ var named = require('vinyl-named');
 var path = require('./gulp.config').path;
 var fileName = require('./gulp.config').fileName;
 var webpackConfig = require('./webpack.config.js');
+var webpackServerConfig = require('./webpack.server-config.js');
 var googleFontsConfig = require('./gulp.config').googleFontsConfig;
 
 /**
@@ -102,10 +103,20 @@ gulp.task('webpack', function () {
     return gulp.src([
             path.webpack.polyfills,
             path.webpack.vendor,
-            path.webpack.boot])
+            path.webpack.boot
+        ])
         .pipe(named())
         .pipe(webpack(webpackConfig))
         .pipe(gulp.dest(path.webpack.dest));
+});
+
+gulp.task('webpack-server', function () {
+    return gulp.src([
+        path.webpackServer.src
+        ])
+        .pipe(named())
+        .pipe(webpack(webpackServerConfig))
+        .pipe(gulp.dest(path.webpackServer.dest));
 });
 
 /**

@@ -7,6 +7,8 @@ var webpackConfig = {
 
     devtool: 'sourcemap',
 
+    target: 'web',
+
     resolve: {
         extensions: ['', '.ts', '.js']
     },
@@ -19,8 +21,12 @@ var webpackConfig = {
             },
             {
                 test: /\.html$/,
-                loader: 'html'
-            }
+                loader: 'html-loader'
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader'
+            },
         ]
     },
 
